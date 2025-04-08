@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: lite;
+  src: url(./assets/fonts/static/Inconsolata-Bold.ttf);
+}
+body {
+  /* background-color: hsl(248, 70%, 10%); */
+  background: url(./assets/images/pattern-squiggly-line-top.svg) 100% 50px,
+    url(./assets/images/pattern-lines.svg),
+    url(./assets/images/pattern-squiggly-line-bottom-desktop.svg) 0% bottom,
+    url(./assets/images/pattern-circle.svg) 0 -75px,
+    url(./assets/images/pattern-circle.svg) 800px 350px,
+    url(./assets/images/background-desktop.png) center center;
+  /* background-position: 90% 50px, 0 0; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+
+
+  color: white;
+  font-family: lite;
+}
+.cont,
+.cont2 {
+  /* background-color: red; */
+  width: 40%;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 50px auto;
+}
+.logo {
+  /* background-color: blue; */
+  margin: 0 auto;
+  width: 220px;
+  margin-bottom: 40px;
+}
+.head {
+  /* background-color: teal; */
+  text-align: center;
+  /* font-family: sans-serif; */
+  font-weight: 900;
+  font-size: 17px;
+  /* color: white; */
+  margin-bottom: 5px;
+}
+.head2 {
+  text-align: center;
+  margin-left: -250px;
+  width: 200%;
+  font-weight: 900;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+.textHead {
+  /* font-family: sans-serif; */
+  text-align: center;
+  margin-bottom: 20px;
+  /* color: white; */
+}
+.imageUpload {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  padding: 50px;
+  width: 100%;
+  border-radius: 20px;
+  border: 2px dashed white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pics {
+  width: 100px;
+  /* background-color: orangered; */
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  /* margin-left: 45px; */
+  /* background-color: white; */
+  border-radius: 20px;
+  padding: 10px;
+}
+.in {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.bottomText {
+  text-align: center;
+}
+.second {
+  /* background-color: darkcyan; */
+  margin-top: 20px;
+}
+.nameFull {
+  font-family: lite;
+  margin-bottom: 10px;
+}
+.name {
+  border: none;
+  /* background-color: red; */
+  height: 40px;
+  width: 100%;
+  padding: 0px 10px;
+  color: white;
+  /* place-content: white; */
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border: 1px solid white;
+}
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: hsl(7, 100%, 71%);
+}
+.write {
+  text-align: center;
+}
+.man {
+  border-radius: 10px;
+  width: 60px;
+}
+.ticket {
+  background: url(./assets/images/pattern-ticket.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.date {
+  font-size: small;
+  margin-left: 45px;
+  /* background-color: purple; */
+  width: 120%;
+}
+.ticketBottom {
+  display: flex;
+  gap: 20px;
+}
+.ticketTop {
+  /* background-color: red; */
+  padding: 0px 0px 50px 0px;
+  width: 70%;
+  /* display: flex; */
+}
+.gits {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+#userName {
+  font-size: large;
+}
+#githubAccount {
+  font-size: small;
+}
+#pic {
+  /* width: 100%; */
+  /* padding: 10px; */
+  height: 15vh;
+}
+#error1,
+#error2,
+#error3 {
+  color: hsl(7, 88%, 67%);
+  padding: 10px 0px;
+  display: none;
+}
+.id {
+  transform: rotate(90deg);
+  margin-top: 60px;
+  /* text-align: center; */
+  /* background-color: red; */
+  color: hsla(0, 0%, 100%, 0.3);
+  /* margin-right: 60px; */
+}
+#name {
+  background: linear-gradient(90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cont2 {
+  display: none;
+}
+
+.part2 {
+  /* background-color: blue; */
+  margin-right: 60px;
+  width: 50px;
+  height: 100px;
+}
+#email {
+  color: hsl(7, 71%, 60%);
+}
+#file {
+  display: none;
+  /* animation: forwards; */
+}
+@media screen and (min-width: 300px) and (max-width: 520px) {
+  .cont {
+    width: 100%;
+    /* background-color: red; */
+  }
+  /* body { */
+  /* height: 100vh; */
+  /* } */
+  .cont2 {
+    width: 100%;
+    /* display: none; */
+  }
+  .ticketTop {
+    padding: 0px 0px 10px 0px;
+  }
+  .part2 {
+    height: 15vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* background-color: blue; */
+    margin-right: -10px;
+    margin-top: 0px;
+  }
+
+  br {
+    display: none;
+  }
+  .head2 {
+    /* background-color: orange; */
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* overflow: auto; */
+  }
+  .ticketBottom {
+    padding: 0px 0px 10px 0px;
+    /* background-color: red; */
+    gap: 10px;
+  }
+  .gits {
+    /* background-color: teal; */
+    margin-top: 0px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 521px) and (max-width: 1000px) {
+  .cont {
+    width: 100%;
+    /* background-color: red; */
+  }
+  body {
+    height: 100vh;
+  }
+  .cont2 {
+    width: 100%;
+  }
+  .id {
+    /* background-color: red; */
+    margin-top: 120px;
+  }
+  br {
+    display: none;
+  }
+  .head2 {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    /* background-color: teal; */
+  }
+  .part2 {
+    /* background-color: blue; */
+    margin-right: 10px;
+    /* margin-top: -10%; */
+  }
+
+  .ticket {
+    /* background-size: cover; */
+
+    background-size: 100%;
+    height: 100vh;
+  }
+  .part1 {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    margin-top: 2%;
+    justify-content: space-between;
+  }
+}
