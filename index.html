@@ -27,6 +27,15 @@
     <link rel="font" href="./assets/fonts/static/Inconsolata-Bold.ttf" />
   </head>
   <body>
+    <div id="preloader">
+      <div class="loader">
+        <div class="load">
+          <div class="loaded">
+            <img src="./assets/images/logo-mark.svg" alt="" class="turn">
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="cont2" id="cont2">
       <div class="logo">
         <img
@@ -116,7 +125,10 @@
             />
             <input type="file" id="file" />
           </div>
+
           <p class="bottomText">Drag and drop or click to upload</p>
+          <!-- <button class="change">changeImage</button>
+       <buttonc>removeImage</button> -->
         </div>
         <p class="space">
           <img src="./assets/images/icon-info.svg" alt="" class="info" />
@@ -136,13 +148,14 @@
         <!-- <input required /> -->
       </div>
       <div class="second">
-        <p class="nameFull"><label for="email">Email Address</label></p>
+        <p class="nameFull">Email Address</p>
         <input
           type="email"
-          name="email"
-          id="email"
+          placeholder="example@email.com"
+          class="name"
+          id="emailName"
           required
-          placeholder="example@gmail.com"
+          onclick="focus()"
         />
         <p id="error2">please enter a valid email</p>
       </div>
@@ -158,9 +171,7 @@
         />
         <p id="error3">please enter your github Name</p>
       </div>
-      <button onclick="generate(), random()" type="submit">
-        Generate My Ticket
-      </button>
+      <button onclick="generate(), random()">Generate My Ticket</button>
     </div>
     <!-- <a href="./style.css" href="./index.html" href="./script.js" download="a"
       >download portfolio</a
@@ -173,6 +184,7 @@
         >Tomosori Ayomide</a
       >.
     </div>
+    
     <script src="./script.js"></script>
   </body>
 </html>

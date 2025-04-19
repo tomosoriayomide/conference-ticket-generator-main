@@ -64,11 +64,16 @@ function email() {
   }
 }
 let number = document.getElementById("userId");
-const n = Math.floor(Math.random() * 2000);
+let n = Math.floor(Math.random() * 2001);
 console.log("random number", n);
+
+n = n < 1000 ? "0" + n : n;
+n = n < 100 ? "0" + n : n;
+n = n < 10 ? "0" + n : n;
 
 function random() {
   number.innerHTML = `<p>#${n}</p>`;
+
   // number.style.color = "red";
   // if(i)
 }
@@ -80,6 +85,8 @@ function changeImage() {
   // function input{
   picupload.addEventListener("click", () => {
     input.click;
+    // input.innerHTML=user
+    user.innerHTML = input;
   });
   input.addEventListener("change", (Event) => {
     const file = Event.target.files[0];
@@ -89,6 +96,8 @@ function changeImage() {
         picupload.src = e.target.result;
       };
       reader.readAsDataURL(file);
+      changeImage.apply = user;
+
       // user.innerHTML = reader;
     }
   });
@@ -108,3 +117,11 @@ function pics() {
 }
 // input.apply.click
 // }
+window.addEventListener("load", () => {
+  let loader = document.getElementById("preloader");
+  let page = document.getElementById("cont1");
+  setTimeout(() => {
+    loader.style.display = "none";
+    page.style.display = "block";
+  }, 100);
+});
