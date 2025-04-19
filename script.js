@@ -123,5 +123,5 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     loader.style.display = "none";
     page.style.display = "block";
-  }, 100);
+  }, 10000);
 });
